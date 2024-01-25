@@ -1,0 +1,133 @@
+$white0: #ffffff;
+$white1: #ededed;
+$white2: #dfdfdf;
+$white3: #cecece;
+$gray1: #d8dbea;
+$gray2: #b0bdcf;
+$gray3: #818392;
+$gray4: #717480;
+$gray-50: #f4f5f9;
+$gray-100: #ebedf4;
+$gray-200: #d8dbea;
+$gray-300: #c3c7de;
+$gray-400: #aaaccf;
+$gray-500: #9494c0;
+$gray-600: #827dae;
+$gray-700: #706a98;
+$gray-800: #5b587b;
+$gray-900: #4d4b64;
+$gray-950: #2c2c3a;
+$black1: #131414;
+$black2: #252525;
+$black3: #3c3c3c;
+$black4: #4a4a4a;
+$blue1: #040e3f;
+$blue2: #0d1a5f;
+$blue3: #23317d;
+$blue4: #3a738a;
+$blue5: #4badb4;
+$blue6: #43707e;
+$blue7: #125c72;
+$blue-50: #ecfeff;
+$blue-100: #cefcff;
+$blue-200: #a3f6fe;
+$blue-300: #64edfc;
+$blue-400: #1dd8f3;
+$blue-500: #01bbd9;
+$blue-600: #0495b6;
+$blue-700: #0b7793;
+$blue-800: #125c72;
+$blue-900: #145065;
+$blue-950: #073545;
+$orange: #ffb979;
+$orange-50: #fff6ed;
+$orange-100: #ffecd4;
+$orange-200: #ffd4a9;
+$orange-300: #ffb979;
+$orange-400: #fe8b39;
+$orange-500: #fc6a13;
+$orange-600: #ed4f09;
+$orange-700: #c53a09;
+$orange-800: #9c2e10;
+$orange-900: #7e2810;
+$orange-950: #441206;
+$orange2: #e6cdb7;
+$green: #97d39a;
+
+// $screen-sm-min: 0px;
+$screen-md-min: 800px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1000px;
+$h1size: 102px;
+$h2size: 86px;
+$h3size: 66px;
+$h4size: 46px;
+$prsize: 32px;
+$plsize: 26px;
+$pelsize: 20px;
+$h1smallsize: 32px;
+$h2smallsize: 28px;
+$h3smallsize: 26px;
+$h4smallsize: 24px;
+$prsmallsize: 22px;
+$plsmallsize: 18px;
+$pelsmallsize: 14px;
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.btn2 {
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  width: 200px;
+  height: 30px;
+  background-color: rgb(90, 192, 161);
+  color: white;
+}
+:export {
+  // white1: $white1;
+  // white2: $white2;
+  // white3: $white3;
+  gray1: $gray1;
+  gray2: $gray2;
+  // gray3: $gray3;
+  // gray4: $gray4;
+  // black1: $black1;
+  // black2: $black2;
+  // black3: $black3;
+  // black4: $black4;
+  // blue1: $blue1;
+  // blue2: $blue2;
+  // blue3: $blue3;
+  // blue4: $blue4;
+  // orange: $orange;
+  // orange2: $orange2;
+  // green: $green;
+}
